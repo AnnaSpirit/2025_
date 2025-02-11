@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tips</title>
+    <style>
+        h4{
+            font-size:large ;
+            color: crimson;
+        }
+        #Custom1{
+            list-style: none;
+        }
+        .custom2::before{
+            content: "\2709";
+            color: red;
+            display: inline-block; width: 1em; 
+            margin-left: -1.5em;
+            margin-right: 0.5em; text-align: right; direction: rtl
+        } 
+
+        .list1, .list2{
+            list-style: square;
+            font-weight: bold;
+        }
+        .list1 + p{
+            color: green;
+        }
+    
+        .list2 + p{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Selectors</h2>
+        <h3>5 categories de Sélecteurs en CSS </h3>
+            <h4>Simple</h4> 
+                <p>Sélection des éléments basés sur: <ul id="Custom1"><li class="custom2">leur <u>nom (ex: h3)</u>, <li class="custom2"><u>id</u> (introduit par un dièse <b style="color:blue">(#)</b>), <li class="custom2"><u>class</u> (introduit par un point<b style="color:blue">(.)</b>).</ul></p>
+            <h4>Combinés</h4>
+                <p>Sélection des éléments basés sur une relation spécifique entre eux, séparés par une virgule <b style="color:blue">(,)</b>.</p>
+            <h4>Pseudo-class</h4>
+                <p>Sélection des éléments basés sur un état donné
+                <ul>
+                    <li class="list1">hover</li>
+<p>est utilisé pour définir le comportement d'un élément lorsqu'un curseur de souris est placé dessus.</p>
+                    <li class="list1">active</li>
+<p>Cible un élément lorsqu'il est activé, généralement lorsqu'il est cliqué.</p>
+                    <li class="list1">focus</li>
+<p>Cible un élément lorsqu'il a le focus, par exemple, après avoir été sélectionné avec la tabulation.</p>
+                    <li class="list1">visited</li>
+<p>Cible un lien hypertexte qui a déjà été visité par l'utilisateur.</p>
+                    <li class="list1">first-child</li>
+<p>Cible le premier enfant d'un élément parent.</p>
+                    <li class="list1">last-child</li>
+<p>Cible le dernier enfant d'un élément parent.</p>                    
+                    <li class="list1">nth-child() </li>
+<p>Cible un élément en fonction de sa position dans l'ordre des enfants de son parent, en utilisant une formule comme "2n" pour cibler chaque deuxième enfant.</p>
+                    <li class="list1">nth-of-type()</li>
+<p>Similaire à :nth-child(), mais cible uniquement les éléments du même type.</p>
+                    <li class="list1">not()</li>
+<p>Permet de sélectionner tous les éléments qui ne correspondent pas à un sélecteur spécifié.</p>
+                    <li class="list1">checked</li>
+                        <p>Cible un élément de type input qui est coché (par exemple, une case à cocher).</p>
+                </ul>
+            <h4>Pseudo-elements</h4>       
+<p>Ciblent une certaine partie d'un élément plutôt que l'élément tout entier. Ils sont représentés par des double-points <b style="color:blue">(::)</b> après le sélecteur CSS.
+    <ul>
+        <li class="list2">::before</li>
+<p>Permet d'insérer du contenu avant le contenu réel d'un élément</p>
+        <li class="list2">::after</li>
+<p>Permet d'insérer du contenu après le contenu réel</p>
+        <li class="list2">::first-line</li>
+<p>Permet de cibler la première ligne de texte à l'intérieur d'un élément</p>
+        <li class="list2">::first-letter</li>
+<p>Permet de cibler la première lettre d'un élément.</p>
+        <li class="list2">::selection</li>
+<p>Permet de cibler le texte sélectionné par l'utilisateur.</p>
+        
+        <li class="list2">::placeholder</li>
+<p>Permet de cibler le texte de l'attribut placeholder d'un élément de formulaire (par exemple, un champ de saisie).</p>
+        
+        <li class="list2">::marker</li>
+<p>Permet de cibler le marqueur d'une liste (par exemple, les puces d'une liste à puce).</p>
+        
+    </ul></p>
+            <h4>Attribute</h4> 
+            <p>(sélection sur la présence d'un attribut avec une valeur bien précise)
+            EX: a[title] { }</p>
+        <H3>Combinateur</h3>
+            <P>Universel (*)
+            EX: * { }</P>
+            <P>Combinateur Enfant (>)
+            EX: article > p { }</P>
+            <P>Combinateur parent ( )
+            EX: article p { }</P>
+            <p><b> element, element <br>
+            écrire la suite</b></p>
+            <P>Combinateur de voisin direct (FRERES) (sélectionner un élément uniquement si celui-ci « suit » un élément donné et que
+            les deux éléments sont les fils d un même élément parent)
+            EX: premier_element + element_cible { }</P>
+            <P>Combinateur de voisin généraux (Les deux éléments sont des fils d'un même parent Element, voisins immédiats ou pas)
+            EX: premier_element ~ second_element { }</P>
+        </h3>
+        <h3>CSS propriété</h3>
+            <p>Colors can be Hexadecimal Color Codes (#ffffff), rgb (rgb(255,255,255)), or color names (black).
+            https://htmlcolorcodes.com/color-names/</p>
+            <p>Background color ou image</p>
+            <p>Borders border-style, border-width, border-color</p>
+            <p>Marges margin-top, margin-bottom, margin-right, margin-left</p>
+            <p>Padding (écarts de remplissage) padding-top, padding-bottom, padding-right, padding-left
+            https://raw.githubusercontent.com/devtlv/studentsGitHub/master/Python/Week1/Day1/CSS%20Padding-Margin.png</p>
+            <p>Dimensions: Largeur (width) et hauteur (height)</p>
+        </h3>
+        <h3>Texte</h3>
+            <p>Police par default
+            Arial (sans-serif), <br> Verdana (sans-serif), <br> Tahoma (sans-serif), <br> Trebuchet MS (sans-serif), <br> Times New Roman (serif), <br>
+            Georgia (serif), <br> Garamond (serif), <br> Courier New (monospace), <br> Brush Script MT (cursive)</p>
+            <p>Fallback Fonts : Serif, Sans-serif, Monospace, Cursive, Fantasy
+            Sites:
+            https://www.cssfontstack.com/
+            https://fonts.google.com/
+            https://www.dafont.com/
+            https://www.hostinger.com/tutorials/best-html-web-fonts)</p>
+            <p><font-family></font-family> (plusieurs noms de polices séparés par des virgules, stabilité des polices du site dont 1
+            police par default obligatoire)</p>
+            <p>Couleur</p>
+            <p>Taille <br>
+            <font-size></font-size>
+            px: nombre de pixels souhaités pour la hauteur du texte, unité absolue
+            em: 1 em est égal à la taille de la police définie sur l'élément parent de l'élément courant que nous composons (plus
+            précisément, la largeur d'un « M » majuscule de l'élément parent).
+            rem: ~= em : égal à la taille de la police sur l'élément racine du document (c'est-à-dire <html>). Le calcul des tailles
+            de police en est facilité.</p>
+            <p>Styles: <br>
+            <font-style></font-style>
+            normal
+            italic (version italique de la police)
+            oblique (simulée de fonte italique)
+            <font-weight></font-weight>
+            normal, bold
+            lighter, bolder
+            100, 200, 300, 400 (normal), 500, 600, 700, (gras), 800, 900;
+            <text-decoration></text-decoration>
+            none: désactive les décorations du texte déjà présentes.
+            underline: souligne le texte.
+            overline: trace une ligne au-dessus du texte.
+            line-through: barre le texte.
+            <text-shadow></text-shadow>
+            <!-- EX: text-shadow: 4px 5px 6px red; -->
+            1. Le décalage horizontal de l'ombre par rapport au texte original (4px)
+            2. Le décalage vertical de l'ombre par rapport au texte original (5px)
+            3. Le rayon de floutage — plus cette valeur est élevée, plus l'ombre est étalée largement. (6px)
+            4. La couleur de l'ombre
+            <!-- EX avec plusieurs niveau d'ombres:
+            text-shadow:
+            -1px -1px 1px orange,
+            0px 4px 1px grey,
+            4px 4px 5px blue,
+            0px 0px 7px green; --></p>
+            <p>Casse <br>
+            <text-transform></text-transform>
+            none : aucune transformation.
+            uppercase : met tout le texte en majuscules.
+            lowercase : met tout le texte en minuscules.
+            capitalize : première lettre en majuscules.
+            full-width : force l'écriture dans une largeur fixe
+            
+            ++ Styles de police de caractères :
+            <font-variant></font-variant>
+            bascule entre petites majuscules et police normale, et réciproquement.
+            <font-kerning></font-kerning>
+            active et désactive les options de crénage des polices.
+            <font-feature-settings></font-feature-settings>
+            active et désactive les fonctionnalités des polices de caractères OpenType.
+            <font-variant-alternates></font-variant-alternates>
+            contrôle l'utilisation de glyphes alternatifs pour une apparence de police donnée.
+            <font-variant-caps></font-variant-caps>
+            contrôle l utilisation de glyphes alternatifs en capitales.
+            <font-variant-east-asian></font-variant-east-asian>
+            contrôle l'utilisation de glyphes alternatifs pour les écritures des pays de l'est de l'Asie, comme le japonais ou le
+            chinois.
+            <font-variant-ligatures></font-variant-ligatures>
+            contrôle les ligatures et formes contextuelles utilisées dans le texte.
+            <font-variant-numeric></font-variant-numeric>
+            contrôle l'utilisation de glyphes alternatifs pour les nombres, les fractions et les marqueurs ordinaux.
+            <font-variant-position></font-variant-position>
+            contrôle l'utilisation de glyphes alternatifs de plus petites tailles positionnés en exposant ou en indice.
+            <font-size-adjust></font-size-adjust>
+            ajuste la taille visuelle de la police indépendamment de sa taille réelle.
+            <font-stretch></font-stretch>
+            bascule entre les versions étirées alternatives possibles d'une police donnée.
+            <text-underline-position></text-underline-position>
+            définit la position du soulignement avec la valeur underline pour la propriété <text-decoration-line>.
+                <text-rendering></text-rendering>
+                essaye d'effectuer une optimisation du rendu du texte.</p>
+        </h3>
+        <h3>MISE EN PAGE</h3>
+        <p>Alignement <br>
+        <text-align></text-align>
+        left: le texte est aligné à gauche.
+        right: le texte est aligné à droite.
+        center: le texte est centré.
+        justify: le texte est aligné à gauche et à droite.</p>
+        <p>Coupure de mots (A UTILISER AVEC JUSTIFY): <br>
+        hyphens:
+        none: aucun trait d'union, dépassement si nécessaire
+        manual: un trait d'union uniquement si nécessaire
+        auto: un trait d'union où l'algorithme l'estime nécessaire</p>
+        <p>Hauteur de ligne
+        <line-height></line-height>
+        cf Word</p>
+        <p>Espacement entre les lettres et les mots
+        <letter-spacing></letter-spacing>
+        chiffre + px
+        <word-spacing></word-spacing>
+        chiffre + px</p>
+        <p>styles de mise en page du texte
+        
+        <text-indenT></text-indenT> : indique le nombre d'espaces à ménager horizontalement avant le début de la première ligne
+        de texte du contenu.
+        <text-overfloW></text-overfloW> : définit la façon de signaler aux utilisateurs le contenu en débordement (et donc non
+        affiché).
+        <white-spacE></white-spacE> : définit comment les espaces blancs et les sauts de ligne associés dans l'élément sont
+        gérés.
+        <word-breaK></word-breaK> : spécifie s'il y a césure dans les mots.
+        <direction></direction> : définit la direction du texte (cela dépend de la langue et généralement, il vaut mieux laisser
+        HTML la gérer car elle est liée au contenu du texte.)
+        <line-break></line-break> : détend ou renforce la rupture de ligne pour les langues asiatiques.
+        <text-align-last></text-align-last> : définit comment la dernière ligne d'un bloc ou d'une ligne, juste avant un saut de
+        ligne forcé, est alignée.
+        text-orientation : définit l'orientation du texte dans une ligne.
+        word-wrap : indique si le navigateur peut replier une ligne en conservant l'ordre des mots pour empêcher un débordement.
+        writing-mode : définit si les lignes de texte sont disposées horizontalement ou verticalement et la direction des lignes
+        suivantes.</p>
+    </h2>
+</body>
+</html>

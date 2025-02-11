@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Définit le type de document et la langue de la page -->
+
+<head>
+	<meta charset="UTF-8"> <!-- Spécifie l'encodage des caractères -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mise en page responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilité IE -->
+	<meta name="description" content="A comprehensive HTML structure template with semantic elements">
+	<!-- Description pour SEO -->
+	<meta name="keywords" content="HTML, template, semantic structure"> <!-- Mots-clés SEO -->
+	<meta name="author" content="Your Name"> <!-- Auteur du document -->
+	<title>Base HTML Structure with Semantics</title> <!-- Titre affiché dans l'onglet du navigateur -->
+	<link rel="stylesheet" href="styles.css"> <!-- Lien vers une feuille de style externe -->
+	<link rel="icon" type="image/png" href="icons8-code-64.png"> <!-- Icône de la page -->
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<h1>Header 1</h1>
+		<h2>Welcome to the Semantic HTML Page</h2>
+	</header>
+
+	<!-- Navigation Menu -->
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<!-- Section 1 -->
+		<section>
+			<h2>Introduction</h2>
+			<div>
+				<p>This is the first paragraph of the introduction.</p>
+			</div>
+			<div>
+				<p>This is the second paragraph of the introduction, which provides more details.</p>
+			</div>
+			<div>
+				<p>This is the third paragraph of the introduction, concluding the section.</p>
+			</div>
+		</section>
+
+		<!-- Articles -->
+		<section>
+			<h2>Articles</h2>
+			<article>
+				<h3>Article 1</h3>
+				<p>This is an article about a specific topic. Articles are useful for displaying self-contained content.
+				</p>
+				<div>
+					<p>Image added from an external link:</p>
+					<img src="https://via.placeholder.com/150" alt="Image from external link">
+				</div>
+				<div>
+					<p>Image added from the same directory as the HTML file:</p>
+					<img src="local-image.jpg" alt="Image from same directory">
+				</div>
+				<div>
+					<p>Image added from a subfolder named PICT:</p>
+					<img src="PICT/subfolder-image.jpg" alt="Image from subfolder">
+				</div>
+			</article>
+
+			<article>
+				<h3>Article 2 : CSS</h3>
+				<h4>Selector</h4>
+					<table>
+					<tr>
+						<th style="width:20%">Selector</th>
+						<th style="width:20%">Example</th>
+						<th>Example description</th>
+					</tr>
+					<tr>
+						<td><i><a href="sel_element.php">element</a></i></td>
+						<td class="notranslate">p</td>
+						<td>Selects all &lt;p&gt; elements</td>
+					</tr>
+					<tr>
+						<td><a href="sel_id.php">#<i>id</i></a></td>
+						<td class="notranslate">#firstname</td>
+						<td>Selects the element with id="firstname"</td>
+					</tr>
+					<tr>
+						<td><a href="sel_all.php">*</a></td>
+						<td class="notranslate">*</td>
+						<td>Selects all elements</td>
+					</tr>
+					<tr>
+						<td><a href="sel_class.php">.<i>class</i></a></td>
+						<td class="notranslate">.intro<br>p.intro</td>
+						<td>Selects all elements with class="intro"<br>Selects all &lt;p&gt; elements with class="intro"
+						</td>
+					</tr>
+					</table>
+				<h4>Combinators</h4>
+					<table class="ws-table-all notranslate">
+	<tbody>
+		<tr>
+			<th style="width:32%">Name</th>
+			<th style="width:15%">Sign</th>
+			<th style="width:13%">Example</th>
+			<th>Example Result</th>
+		</tr>
+		<tr>
+			<td><a href="sel_element_gt.php">Child combinator</a></td>
+			<td>&gt;</td>
+			<td class="notranslate">div &gt; p</td>
+			<td>Selects every &lt;p&gt; element that are direct children of a &lt;div&gt; element</td>
+		</tr>
+		<tr>
+			<td><a href="sel_element_element.php">Descendant combinator</a></td>
+			<td>(single space)</td>
+			<td class="notranslate">div p</td>
+			<td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+		</tr>
+		<tr>
+			<td>Namespace separator</td>
+			<td>|</td>
+			<td class="notranslate">ns | h2</td>
+			<td>Selects all &lt;h2&gt; elements in namespace ns</td>
+		</tr>
+		<tr>
+			<td><a href="sel_element_pluss.php">Next-sibling combinator</a></td>
+			<td>+</td>
+			<td class="notranslate">div + p</td>
+			<td>Selects the first &lt;p&gt; element that is placed immediately after &lt;div&gt; elements</td>
+		</tr>
+		<tr>
+			<td><a href="sel_element_comma.php">Selector list</a></td>
+			<td>,</td>
+			<td>div, p</td>
+			<td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+		</tr>
+		<tr>
+			<td><a href="sel_gen_sibling.php">Subsequent-sibling combinator</a> </td>
+			<td>~</td>
+			<td>p ~ ul</td>
+			<td>Selects all &lt;ul&gt; elements that are preceded by a &lt;p&gt; element</td>
+		</tr>
+	</tbody>
+					</table>
+				<h4>Pseudo-classes</h4>
+					<table>
+	<tr>
+		<th style="width:25%">Pseudo-class</th>
+		<th style="width:20%">Examples</th>
+		<th>Example description</th>
+	</tr>
+	<tr>
+		<td><a href="sel_active.php">:active</a></td>
+		<td class="notranslate">a:active</td>
+		<td>Selects the active link</td>
+	</tr>
+	<tr>
+		<td><a href="sel_any-link.php">:any-link</a></td>
+		<td class="notranslate">a:anylink<br>area:anylink</td>
+		<td>Selects any &lt;a&gt; or &lt;area&gt; element with an href attribute</td>
+	</tr>
+	<tr>
+		<td><a href="sel_autofill.php">:auto-fill</a></td>
+		<td class="notranslate">input:autofill</td>
+		<td>Selects any &lt;input&gt; element with its value autofilled by the
+			browser</td>
+	</tr>
+	<tr>
+		<td><a href="sel_checked.php">:checked</a></td>
+		<td>input:checked<br>option:checked</td>
+		<td>Matches any &lt;input&gt; or &lt;option&gt; element that is checked</td>
+	</tr>
+	<tr>
+		<td><a href="sel_default.php">:default</a></td>
+		<td>input:default<br>button:default<br>option:default</td>
+		<td>Selects form elements that are default in a group of related elements</td>
+	</tr>
+	<tr>
+		<td><a href="sel_defined.php">:defined</a></td>
+		<td>:defined</td>
+		<td>Selects any element that has been defined (standard or custom
+			elements)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_dir.php">:dir()</a></td>
+		<td>:dir(ltr)<br>:dir(rtl)</td>
+		<td>Selects any element with the specified text direction</td>
+	</tr>
+	<tr>
+		<td><a href="sel_disabled.php">:disabled</a></td>
+		<td>:disabled<br>input:disabled<br>option:disabled</td>
+		<td>Selects any element that is disabled. Most used for form elements</td>
+	</tr>
+	<tr>
+		<td><a href="sel_empty.php">:empty</a></td>
+		<td>div:empty</td>
+		<td>Selects any element that has no children (including text nodes)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_enabled.php">:enabled</a></td>
+		<td>:enabled<br>input:enabled</td>
+		<td>Selects any element that is enabled. Most used for form elements</td>
+	</tr>
+	<tr>
+		<td><a href="sel_first.php">:first</a></td>
+		<td class="notranslate">@page :first</td>
+		<td>Represents the first page of a printed document (used with the @page
+			rule)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_firstchild.php">:first-child</a></td>
+		<td class="notranslate">p:first-child<br>li:first-child</td>
+		<td>Selects the element that is the first child of its parent (among a group
+			of sibling elements)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_first-of-type.php">:first-of-type</a></td>
+		<td>p:first-of-type<br>li:first-of-type</td>
+		<td>Selects the first element of its type among a group of sibling elements</td>
+	</tr>
+	<tr>
+		<td><a href="sel_focus.php">:focus</a></td>
+		<td class="notranslate">input:focus<br>select:focus</td>
+		<td>Selects the element that gets focus. Most used for form elements</td>
+	</tr>
+	<tr>
+		<td><a href="sel_focus-visible.php">:focus-visible</a></td>
+		<td class="notranslate">button:focus-visible</td>
+		<td>Selects the element that gets focus (used to apply focus styles only
+			when the keyboard is used to focus something, not the mouse)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_focus-within.php">:focus-within</a></td>
+		<td class="notranslate">form:focus-within<br>label:focus-within</td>
+		<td>Matches an element if the element or any of its descendants gets focus</td>
+	</tr>
+	<tr>
+		<td><a href="sel_fullscreen.php">:fullscreen</a></td>
+		<td class="notranslate">:fullscreen</td>
+		<td>Selects any element that is currently in full-screen mode</td>
+	</tr>
+	<tr>
+		<td><a href="sel_has.php">:has()</a></td>
+		<td class="notranslate">h2:has(+p)</td>
+		<td>Selects h2 elements that are immediately followed by a p element, and
+			applies the style to h2</td>
+	</tr>
+	<tr>
+		<td><a href="sel_hover.php">:hover</a></td>
+		<td class="notranslate">a:hover<br>p:hover</td>
+		<td>Selects element on mouse over</td>
+	</tr>
+	<tr>
+		<td><a href="sel_in-range.php">:in-range</a></td>
+		<td class="notranslate">input:in-range</td>
+		<td>Select any &lt;input&gt; element with a value within the specified range
+			limit</td>
+	</tr>
+	<tr>
+		<td><a href="sel_indeterminate.php">:indeterminate</a></td>
+		<td class="notranslate">input:indeterminate</td>
+		<td>Selects any form element that is in an indeterminate state</td>
+	</tr>
+	<tr>
+		<td><a href="sel_invalid.php">:invalid</a></td>
+		<td class="notranslate">input:invalid<br>fieldset:invalid</td>
+		<td>Selects invalid form elements</td>
+	</tr>
+	<tr>
+		<td><a href="sel_is.php">:is()</a></td>
+		<td class="notranslate">:is(ul, ol)</td>
+		<td>Selects all &lt;ul&gt; and &lt;ol&gt;elements</td>
+	</tr>
+	<tr>
+		<td><a href="sel_lang.php">:lang()</a></td>
+		<td class="notranslate">p:lang(it)</td>
+		<td>Selects any &lt;p&gt; element with a lang attribute equal to "it" (Italian)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_last-child.php">:last-child</a></td>
+		<td>li:last-child</td>
+		<td>Selects any &lt;li&gt; element that is the last child of its parent</td>
+	</tr>
+	<tr>
+		<td><a href="sel_last-of-type.php">:last-of-type</a></td>
+		<td>p:last-of-type</td>
+		<td>Selects any &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+	</tr>
+	<tr>
+		<td><a href="sel_left.php">:left</a></td>
+		<td class="notranslate">@page :left</td>
+		<td>Represents all left-hand pages of a printed document (used with the @page
+			rule)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_link.php">:link</a></td>
+		<td class="notranslate">a:link</td>
+		<td>Selects any unvisited link</td>
+	</tr>
+	<tr>
+		<td><a href="sel_modal.php">:modal</a></td>
+		<td>:modal</td>
+		<td>Selects the element that is in a modal state</td>
+	</tr>
+	<tr>
+		<td><a href="sel_not.php">:not()</a></td>
+		<td>:not(p)</td>
+		<td>Selects any element that is not a &lt;p&gt; element</td>
+	</tr>
+	<tr>
+		<td><a href="sel_nth-child.php">:nth-child()</a></td>
+		<td>p:nth-child(2)</td>
+		<td>Selects any &lt;p&gt; element that is the second child of its parent</td>
+	</tr>
+	<tr>
+		<td><a href="sel_nth-last-child.php">:nth-last-child()</a></td>
+		<td>p:nth-last-child(2)</td>
+		<td>Selects any &lt;p&gt; element that is the second child of its parent, counting from the
+			end</td>
+	</tr>
+	<tr>
+		<td><a href="sel_nth-last-of-type.php">:nth-last-of-type()</a></td>
+		<td>p:nth-last-of-type(2)</td>
+		<td>Selects any &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the
+			end</td>
+	</tr>
+	<tr>
+		<td><a href="sel_nth-of-type.php">:nth-of-type()</a></td>
+		<td>p:nth-of-type(2)</td>
+		<td>Selects any &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+	</tr>
+	<tr>
+		<td><a href="sel_only-child.php">:only-child</a></td>
+		<td>p:only-child</td>
+		<td>Selects any &lt;p&gt; element that is the only child of its parent</td>
+	</tr>
+	<tr>
+		<td><a href="sel_only-of-type.php">:only-of-type</a></td>
+		<td>p:only-of-type</td>
+		<td>Selects any &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+	</tr>
+	<tr>
+		<td><a href="sel_optional.php">:optional</a></td>
+		<td class="notranslate">input:optional<br>select:optional<br>textarea:optional</td>
+		<td>Selects any &lt;input&gt;, &lt;select&gt;, or &lt;textarea&gt; elements without
+			a "required" attribute</td>
+	</tr>
+	<tr>
+		<td><a href="sel_out-of-range.php">:out-of-range</a></td>
+		<td class="notranslate">input:out-of-range</td>
+		<td>Selects any &lt;input&gt; element with a value outside the specified range
+			limit</td>
+	</tr>
+	<tr>
+		<td><a href="sel_placeholder-shown.php">:placeholder-shown</a></td>
+		<td class="notranslate">input:placeholder-shown<br>
+			textarea:placeholder-shown</td>
+		<td>Selects any &lt;input&gt; or &lt;textarea&gt; element that is currently displaying
+			placeholder text</td>
+	</tr>
+	<tr>
+		<td><a href="sel_popover-open.php">:popover-open</a></td>
+		<td class="notranslate">:popover-open</td>
+		<td>Selects any element that is in a showing popover state</td>
+	</tr>
+	<tr>
+		<td><a href="sel_read-only.php">:read-only</a></td>
+		<td class="notranslate">input:read-only</td>
+		<td>Selects input elements with the "readonly" attribute specified</td>
+	</tr>
+	<tr>
+		<td><a href="sel_read-write.php">:read-write</a></td>
+		<td class="notranslate">input:read-write</td>
+		<td>Selects editable input elements</td>
+	</tr>
+	<tr>
+		<td><a href="sel_required.php">:required</a></td>
+		<td class="notranslate">input:required</td>
+		<td>Selects input elements with the "required" attribute specified</td>
+	</tr>
+	<tr>
+		<td><a href="sel_right.php">:right</a></td>
+		<td>@page :right</td>
+		<td>Represents all right-hand pages of a printed document (used with the @page
+			rule)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_root.php">:root</a></td>
+		<td>:root</td>
+		<td>Selects the document's root element</td>
+	</tr>
+	<tr>
+		<td>:scope</td>
+		<td>:scope</td>
+		<td>Selects elements that are a reference point, or scope, for selectors to
+			match against</td>
+	</tr>
+	<tr>
+		<td>:state()</td>
+		<td>:state()</td>
+		<td>Selects custom elements that have the specified custom state</td>
+	</tr>
+	<tr>
+		<td><a href="sel_target.php">:target</a></td>
+		<td>:target </td>
+		<td>Selects the current active target element</td>
+	</tr>
+	<tr>
+		<td><a href="sel_user-invalid.php">:user-invalid</a></td>
+		<td class="notranslate">:user-invalid</td>
+		<td>Selects any form element with an invalid value (after the user have
+			interacted with it)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_user-valid.php">:user-valid</a></td>
+		<td class="notranslate">:user-valid</td>
+		<td>Selects any form element with a valid value (after the user have
+			interacted with it)</td>
+	</tr>
+	<tr>
+		<td><a href="sel_valid.php">:valid</a></td>
+		<td class="notranslate">input:valid</td>
+		<td>Selects all input elements with a valid value</td>
+	</tr>
+	<tr>
+		<td><a href="sel_visited.php">:visited</a></td>
+		<td class="notranslate">a:visited<br>area:visited</td>
+		<td>Selects all visited links</td>
+	</tr>
+	<tr>
+		<td><a href="sel_where.php">:where()</a></td>
+		<td class="notranslate">:where(ol, ul)</td>
+		<td>Selects all &lt;ul&gt; and &lt;ol&gt;elements</td>
+	</tr>
+					</table>
+				<h4>Pseudo-elements</h4>
+<table class="ws-table-all notranslate">
+	<tbody>
+		<tr>
+			<th style="width:25%">Pseudo-element</th>
+			<th style="width:25%">Example</th>
+			<th>Example description</th>
+		</tr>
+		<tr>
+			<td><a href="sel_after.php">::after</a></td>
+			<td class="notranslate">p::after<br>div::after</td>
+			<td>Inserts something after the content of the specified element</td>
+		</tr>
+		<tr>
+			<td><a href="sel_backdrop.php">::backdrop</a></td>
+			<td class="notranslate">dialog::backdrop</td>
+			<td>Styles the viewbox behind a dialog box or popover element</td>
+		</tr>
+		<tr>
+			<td><a href="sel_before.php">::before</a></td>
+			<td class="notranslate">p::before<br>div::before</td>
+			<td>Inserts something before the content of the specified element</td>
+		</tr>
+		<tr>
+			<td><a href="sel_file-selector-button.php">::file-selector-button</a></td>
+			<td>::file-selector-button</td>
+			<td>Selects any button of type &lt;input type="file"&gt;</td>
+		</tr>
+		<tr>
+			<td><a href="sel_firstletter.php">::first-letter</a></td>
+			<td class="notranslate">p::first-letter</td>
+			<td>Selects the first letter of every &lt;p&gt; element</td>
+		</tr>
+		<tr>
+			<td><a href="sel_firstline.php">::first-line</a></td>
+			<td class="notranslate">p::first-line</td>
+			<td>Selects the first line of every &lt;p&gt; element</td>
+		</tr>
+		<tr>
+			<td><a href="sel_grammar-error.php">::grammar-error</a></td>
+			<td>::grammar-error</td>
+			<td>Styles a text that the browser has flagged as grammatically incorrect</td>
+		</tr>
+		<tr>
+			<td><a href="sel_highlight.php">::highlight()</a></td>
+			<td>::highlight(custom-name)</td>
+			<td>Selects a custom highlight</td>
+		</tr>
+		<tr>
+			<td><a href="sel_marker.php">::marker</a></td>
+			<td>::marker</td>
+			<td>Selects the markers of list items</td>
+		</tr>
+		<tr>
+			<td><a href="sel_placeholder.php">::placeholder</a></td>
+			<td class="notranslate">input::placeholder<br>textarea::placeholder</td>
+			<td>Styles the placeholder text of &lt;input&gt; or &lt;textarea&gt; elements</td>
+		</tr>
+		<tr>
+			<td><a href="sel_selection.php">::selection</a></td>
+			<td>::selection</td>
+			<td>Styles the user-selected text</td>
+		</tr>
+		<tr>
+			<td><a href="sel_spelling-error.php">::spelling-error</a></td>
+			<td>::spelling-error</td>
+			<td>Styles a text that the browser has flagged as incorrectly spelled</td>
+		</tr>
+		<tr>
+			<td>::view-transition</td>
+			<td class="notranslate">::view-transition</td>
+			<td>Represents the root of the view transitions overlay, which contains all
+				view transition on the page</td>
+		</tr>
+		<tr>
+			<td>::view-transition-group</td>
+			<td class="notranslate">::view-transition-group</td>
+			<td>Represents a single view transition snapshot group</td>
+		</tr>
+		<tr>
+			<td>::view-transition-image-pair</td>
+			<td class="notranslate">::view-transition-image-pair</td>
+			<td>Represents a container for a view transition's "old" and "new" view
+				states - before and after the transition</td>
+		</tr>
+		<tr>
+			<td>::view-transition-new</td>
+			<td class="notranslate">::view-transition-new</td>
+			<td>Represents the "new" view state of a view transition</td>
+		</tr>
+		<tr>
+			<td>::view-transition-old</td>
+			<td class="notranslate">::view-transition-old</td>
+			<td>Represents the "old" view state of a view transition</td>
+		</tr>
+	</tbody>
+</table>
+<h4>bbbbbbbbbbbbbb</h4>
+
+
+			</article>
+
+			<article>
+				<h3>Article 3</h3>
+				<p>HTML_Colors</p>
+			</article>
+
+			<article>
+				<h3>Article 4</h3>
+				<p>This is an additional article with valuable content and insights.</p>
+			</article>
+
+			<article>
+				<h3>Article 5</h3>
+				<p>This article discusses an important subject in depth.</p>
+			</article>
+
+			<article>
+				<h3>Format HTML</h3>
+				<article>
+					<pre>Quoiqu'il a    rrive   ce texte conser    vera son format tel qui'l est dans le fichier HTmL. <br> mais la police sera, en principe par  dé fault, du Courrier. les espace et les saut de lignes seront
+                         con 
+                            servées.</pre>
+					<!-- <pre>  Defines pre-formatted text -->
+					<pre> <!-- https://www.messletters.com/fr/ -->
+                                     ∧,,,∧      ~  ┏━━━━━━━━━━━━━━━━━┓
+                                   ( ̳• · ̳• )    ~  ♡♡  I’m purrfect ♡♡
+                                                     𝕬𝖓𝖉 𝕴'𝖒 𝖋𝖆𝖇𝖚𝖑𝖔𝖚𝖘
+                                      / づ       ~  ┗━━━━━━━━━━━━━━━━━┛
+                    </pre>
+				</article>
+			</article>
+		</section>
+
+		<!-- Table Section -->
+		<section>
+			<h2>Table of Information</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+						<th>Column 3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Data 1</td>
+						<td>Data 2</td>
+						<td>Data 3</td>
+					</tr>
+					<tr>
+						<td>Data 4</td>
+						<td>Data 5</td>
+						<td>Data 6</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<br>
+			<br>
+
+			<!-- inserer un tableau de 5 sur 3 -->
+			<table
+				style="width: 700px; height: 100px; margin-left: auto; margin-right: auto; border: 2px solid #0505ff; border-collapse: collapse;">
+				<tbody>
+					<tr style="border-bottom: 3px solid  background-color: rgb(136, 220, 235);">
+						<td>Lorem, lorem.</td>
+						<td>Lorem, lorem..</td>
+						<td style="width: 300px">Lorem ipsum dolor sit amet.</td>
+						<td>Lorem, lorem...</td>
+						<td>Lorem, lorem....</td>
+					</tr>
+					<tr>
+						<td
+							style="border-top: 3px solid #0505ff; border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td
+							style="border-top: 3px solid #0505ff;border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td
+							style="border-top: 3px solid #0505ff;border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td
+							style="border-top: 3px solid #0505ff;border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td
+							style="border-top: 3px solid #0505ff;border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+					</tr>
+					<tr>
+						<td
+							style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td
+							style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td
+							style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td
+							style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td
+							style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!-- Sidebar -->
+		<aside>
+			<h3>Sidebar</h3>
+			<p>This is additional information related to the main content, often displayed on the side.</p>
+		</aside>
+	</main>
+
+	<!-- Footer Section -->
+	<footer>
+		<p>&copy; 2025 Your Website. All Rights Reserved.</p>
+	</footer>
+
+</body>
+
+</html>

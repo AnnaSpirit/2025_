@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Non-semantic HTML</title>
+    <link href="main.css" rel="stylesheet" />
+    <link>
+</head>
+
+<body>
+    <header>
+        <h1>My super cool blog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li title="I'm a tooltip _ Etiquette">About Me</li>
+            <!-- The title attribute defines some extra information about an element -->
+            <li>Contact</li>
+            <li>Search</li>
+            <li>Store</li>
+        </ul>
+    </nav>
+    <article>
+        <header>
+            <h2>Important Title</h2>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, ullam maiores? Ex, eum! Ducimus ut velit
+            ad ullam quisquam fugit vitae harum eligendi, qui necessitatibus, laudantium reprehenderit nihil, sint
+            aperiam!</p>
+        <p>Recusandae fugiat, eum, modi odio, quis quibusdam a maxime impedit accusamus ipsum nulla maiores commodi
+            voluptas saepe nisi laudantium doloremque perferendis suscipit! Ullam consequuntur veritatis, atque quidem
+            reiciendis facilis voluptatum!</p>
+        <p>Animi sit, facere, molestiae vel consequuntur suscipit alias dolorem adipisci hic non id sint illum,
+            doloremque iure ut assumenda! Provident neque asperiores, vitae ab. Ducimus recusandae sed rerum doloribus
+            consequatur!</p>
+    </article>
+    <article>
+        <header>
+            <h2>Super Important Title</h2>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur ab, aliquid facilis omnis
+            praesentium recusandae. Aliquid itaque omnis nam harum sit! Explicabo eum consectetur aut repellendus,
+            nostrum hic iste.</p>
+        <p>Illo repellat quia, minima reiciendis. Laudantium, perferendis! Laudantium consectetur impedit at nobis error
+            aspernatur repellendus quaerat, quas repudiandae maxime. Architecto consequatur, autem natus quaerat illo
+            accusamus! Voluptatem accusantium pariatur perspiciatis!</p>
+        <p>Vitae corrupti, tempora itaque ab est facere eius optio fugiat, ex possimus beatae nulla esse molestias
+            suscipit quisquam nostrum sunt quod mollitia. Mollitia reiciendis, aspernatur. Quas, eligendi temporibus
+            earum debitis?</p>
+    </article>
+    <article>
+        <header>
+            <h4>Recent Posts</h4>
+        </header>
+        <ul>
+            <li>Post 1</li>
+            <!-- insérer image -->
+                <a href="https://www.facebook.com/Sp.Epiar/" title="Lien vers ma page Facebook."target="_blank"> <img alt="Lien vers ma page Facebook" src="img/facebook.png" width="40" height="60"/>
+            <li>Post 2</li>
+            <!-- insérer image -->
+            <a href="https://api.whatsapp.com/send?phone=%2B972504438708&text&app_absent=0"
+                title="Lien vers mon WhatsApp." target="_blank"> <img alt="Lien vers mon WhatsApp"
+                    src="https://img.freepik.com/psd-gratuit/conception-du-logo-medias-sociaux_23-2151296979.jpg?size=626&ext=jpg"
+                    width="60" height="60"/>
+            </a>
+            <!-- Remplacer cette image par une image provenant de l ordinateur, même dossier que html et css. 
+            
+            There are two ways to specify the URL in the src attribute:
+
+1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+    Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+
+2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+    Tip: It is almost always best to use relative URLs. They will not break if you change domain.-->
+            <li>Post 3</li>
+                <!-- inserer un tableau de 5 sur 3      -->
+            
+                <table style="width: 700px; height: 100px; margin-left: auto; margin-right: auto; border: 2px solid #0505ff; border-collapse: collapse;">
+                
+                <tbody>
+                <tr style="border-bottom: 3px solid  background-color: rgb(136, 220, 235);">
+                <td>Lorem, lorem.</td>
+                <td>Lorem, lorem..</td>
+                <td style="width: 300px">Lorem ipsum dolor sit amet.</td>
+                <td>Lorem, lorem...</td>
+                <td>Lorem, lorem....</td>
+                </tr>
+                <tr>
+                    <td
+                        style="border-top: 3px solid #0505ff; border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                    <td
+                        style="border-top: 3px solid #0505ff;border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                    <td
+                        style="border-top: 3px solid #0505ff;border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                    <td
+                        style="border-top: 3px solid #0505ff;border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                    <td
+                        style="border-top: 3px solid #0505ff;border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                </tr>
+                <tr>
+                    <td
+                        style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                    <td
+                        style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                    <td
+                        style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                    <td
+                        style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                    <td
+                        style="border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+                        Lorem ipsum dolor sit amet consectetur.</td>
+                </tr>
+                </tbody>
+            </table>
+            <li>Post 4</li>
+        </ul>
+<!-- Chiffre romain majuscule -->
+        <ol type="I">
+            <li>Titre section 1</li>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, at?</p>
+            <li>Titre section 2</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit.</p>
+            <li>Titre section 3</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, doloribus?</p>
+            <li>Titre section 4</li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, labore voluptatem!</p>
+            <li>Titre section 5</li>
+        </ol>
+    </article>
+    <article>
+        <pre>Quoiqu'il a    rrive   ce texte conser    vera son format tel qui'l est dans le fichier HTmL. <br> mais la police sera, en principe par  dé fault, du Courrier. les espace et les saut de lignes seront
+             con 
+                servées.</pre>
+        <!-- <pre> 	Defines pre-formatted text -->
+
+        <pre> <!-- https://www.messletters.com/fr/ -->
+                                 ∧,,,∧      ~  ┏━━━━━━━━━━━━━━━━━┓
+                               ( ̳• · ̳• )    ~  ♡♡  I’m purrfect ♡♡
+                                                 𝕬𝖓𝖉 𝕴'𝖒 𝖋𝖆𝖇𝖚𝖑𝖔𝖚𝖘
+                                  / づ       ~  ┗━━━━━━━━━━━━━━━━━┛
+        </pre>
+    </article>
+    <footer>
+        <p>Copright MysupercoolBlog.net. All Rights Reserved. Don't steal my stuff!</p>
+    </footer>
+</body>
+
+</html>

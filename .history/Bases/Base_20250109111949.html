@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Définit le type de document et la langue de la page -->
+
+<head>
+	<meta charset="UTF-8"> <!-- Spécifie l'encodage des caractères -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mise en page responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilité IE -->
+	<meta name="description" content="A comprehensive HTML structure template with semantic elements">
+	<!-- Description pour SEO -->
+	<meta name="keywords" content="HTML, template, semantic structure"> <!-- Mots-clés SEO -->
+	<meta name="author" content="Your Name"> <!-- Auteur du document -->
+	<title>Base HTML Structure with Semantics</title> <!-- Titre affiché dans l'onglet du navigateur -->
+	<link rel="stylesheet" href="styles.css"> <!-- Lien vers une feuille de style externe -->
+	<link rel="icon" type="image/png" href="favicon.png"> <!-- Icône de la page -->
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header,
+		footer {
+			background-color: #f4f4f4;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav {
+			background-color: #ddd;
+			padding: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		nav ul li {
+			margin: 0 10px;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		article {
+			margin-bottom: 20px;
+			padding: 15px;
+			background-color: #f9f9f9;
+			border: 1px solid #ddd;
+		}
+
+		section {
+			margin-bottom: 20px;
+		}
+
+		aside {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid #ccc;
+		}
+
+		th,
+		td {
+			padding: 10px;
+			text-align: left;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<h1>Header 1</h1>
+		<h2>Welcome to the Semantic HTML Page</h2>
+	</header>
+
+	<!-- Navigation Menu -->
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<!-- Section 1 -->
+		<section>
+			<h2>Introduction</h2>
+			<div>
+				<p>This is the first paragraph of the introduction.</p>
+			</div>
+			<div>
+				<p>This is the second paragraph of the introduction, which provides more details.</p>
+			</div>
+			<div>
+				<p>This is the third paragraph of the introduction, concluding the section.</p>
+			</div>
+		</section>
+
+		<!-- Articles -->
+		<section>
+			<h2>Articles</h2>
+			<article>
+				<h3>Article 1</h3>
+				<p>This is an article about a specific topic. Articles are useful for displaying self-contained content.
+				</p>
+				<div>
+					<p>Image added from an external link:</p>
+					<img src="https://via.placeholder.com/150" alt="Image from external link">
+				</div>
+				<div>
+					<p>Image added from the same directory as the HTML file:</p>
+					<img src="local-image.jpg" alt="Image from same directory">
+				</div>
+				<div>
+					<p>Image added from a subfolder named PICT:</p>
+					<img src="PICT/subfolder-image.jpg" alt="Image from subfolder">
+				</div>
+			</article>
+
+			<article>
+				<h3>Article 2: CSS</h3>
+				<p>
+					<code>
+                        /* 5 categories de Sélecteurs en CSS :
+                        + Simple (selection des elements basés sur nom, id (introduit par un dièse (#), class (introduit par un point(.))))
+                        + Combinés (Selection des elements basé sur une relation spécifique entre eux séparés par une virgule.)
+                        + Pseudo-class (Selection des elements basé sur un état donné)
+                                EX:hover
+                        + Pseudo-elements (ciblent une certaine partie d'un élément plutôt que l'élément tout entier.) 
+                                EX: p::first-line { }
+                        + Attribute (sélection sur la présence d'un attribut avec une valeur bien précise)
+                                EX: a[title] { }
+
+                        ++ Universel (*)
+                                EX: * { }
+                        ++ Combinateur Enfant (>)
+                                EX: article > p { }
+                        ++ Combinateur parent ( )
+                                EX: article p { }
+                        ++ Combinateur de voisin direct (FRERES) (sélectionner un élément uniquement si celui-ci « suit » un élément donné et que les deux éléments sont les fils d un même élément parent)
+                                EX: premier_element + element_cible { }
+                        ++ Combinateur de voisin généraux (Les deux éléments sont des fils d'un même parent Element, voisins immédiats ou pas)
+                                EX: premier_element ~ second_element { }
+                        */
+
+                        CSS PROPRIÉTÉS:
+
+                        + Colors can be Hexadecimal Color Codes (#ffffff), rgb (rgb(255,255,255)), or color names (black).
+                                https://htmlcolorcodes.com/color-names/
+
+                        + Background color ou image
+                        + Borders  border-style, border-width, border-color
+                        + Marges margin-top, margin-bottom, margin-right, margin-left
+                        + Padding (écarts de remplissage) padding-top, padding-bottom, padding-right, padding-left
+                        https://raw.githubusercontent.com/devtlv/studentsGitHub/master/Python/Week1/Day1/CSS%20Padding-Margin.png
+                        + Dimensions: Largeur (width) et hauteur (height)
+
+                        TEXT:
+                        + Police par default
+                                Arial (sans-serif), Verdana (sans-serif), Tahoma (sans-serif), Trebuchet MS (sans-serif), Times New Roman (serif), Georgia (serif), Garamond (serif), Courier New (monospace), Brush Script MT (cursive)
+                        + Fallback Fonts : Serif, Sans-serif, Monospace, Cursive, Fantasy
+                                Sites: 
+                                        https://www.cssfontstack.com/
+                                        https://fonts.google.com/
+                                        https://www.dafont.com/ 
+                                        https://www.hostinger.com/tutorials/best-html-web-fonts)
+
+                        <font-family></font-family> (plusieurs noms de polices séparés par des virgules, stabilité des polices du site dont 1 police par default obligatoire)
+                        + Couleur
+                        Color 
+                        + Taille
+                        <font-size></font-size>
+                                px: nombre de pixels souhaités pour la hauteur du texte, unité absolue
+                                em: 1 em est égal à la taille de la police définie sur l'élément parent de l'élément courant que nous composons (plus précisément, la largeur d'un « M » majuscule de l'élément parent). 
+                                rem: ~= em : égal à la taille de la police sur l'élément racine du document (c'est-à-dire <html>). Le calcul des tailles de police en est facilité.
+                        + Styles: 
+                                <font-style></font-style> 
+                                        normal
+                                        italic (version italique de la police)
+                                        oblique (simulée de fonte italique)
+                                <font-weight></font-weight>
+                                        normal, bold
+                                        lighter, bolder
+                                        100, 200, 300, 400 (normal), 500, 600, 700, (gras), 800, 900;
+                                <text-decoration></text-decoration>
+                                        none: désactive les décorations du texte déjà présentes.
+                                        underline: souligne le texte.
+                                        overline: trace une ligne au-dessus du texte.
+                                        line-through: barre le texte.
+                                <text-shadow></text-shadow> 
+                        <!-- EX: text-shadow: 4px 5px 6px red; -->
+                                        1. Le décalage horizontal de l'ombre par rapport au texte original (4px)
+                                        2. Le décalage vertical de l'ombre par rapport au texte original (5px)
+                                        3. Le rayon de floutage — plus cette valeur est élevée, plus l'ombre est étalée largement. (6px)
+                                        4. La couleur de l'ombre
+                        <!-- EX avec plusieurs niveau d'ombres:
+                        text-shadow:
+                        -1px -1px 1px orange,
+                        0px 4px 1px grey,
+                        4px 4px 5px blue,
+                        0px 0px 7px green; -->
+                        + Casse 
+                                <text-transform></text-transform>
+                                        none : aucune transformation.
+                                        uppercase : met tout le texte en majuscules.
+                                        lowercase : met tout le texte en minuscules.
+                                        capitalize : première lettre en majuscules.
+                                        full-width : force l'écriture dans une largeur fixe
+
+                                ++ Styles de police de caractères :
+                                <font-variant></font-variant>
+                                        bascule entre petites majuscules et police normale, et réciproquement.
+                                <font-kerning></font-kerning>
+                                        active et désactive les options de crénage des polices.
+                                <font-feature-settings></font-feature-settings>
+                                        active et désactive les fonctionnalités des polices de caractères OpenType.
+                                <font-variant-alternates></font-variant-alternates>
+                                        contrôle l'utilisation de glyphes alternatifs pour une apparence de police donnée.
+                                <font-variant-caps></font-variant-caps>
+                                        contrôle l utilisation de glyphes alternatifs en capitales.
+                                <font-variant-east-asian></font-variant-east-asian>
+                                        contrôle l'utilisation de glyphes alternatifs pour les écritures des pays de l'est de l'Asie, comme le japonais ou le chinois.
+                                <font-variant-ligatures></font-variant-ligatures>
+                                                contrôle les ligatures et formes contextuelles utilisées dans le texte.
+                                <font-variant-numeric></font-variant-numeric>
+                                        contrôle l'utilisation de glyphes alternatifs pour les nombres, les fractions et les marqueurs ordinaux.
+                                <font-variant-position></font-variant-position>
+                                                contrôle l'utilisation de glyphes alternatifs de plus petites tailles positionnés en exposant ou en indice.
+                                <font-size-adjust></font-size-adjust>
+                                        ajuste la taille visuelle de la police indépendamment de sa taille réelle.
+                                <font-stretch></font-stretch>
+                                        bascule entre les versions étirées alternatives possibles d'une police donnée.
+                                <text-underline-position></text-underline-position>
+                                        définit la position du soulignement avec la valeur underline pour la propriété <text-decoration-line>.
+                                <text-rendering></text-rendering>
+                                        essaye d'effectuer une optimisation du rendu du texte.
+
+
+                        MISE EN PAGE:
+                        + Alignement
+                        <text-align></text-align>
+                                left: le texte est aligné à gauche.
+                                right: le texte est aligné à droite.
+                                center: le texte est centré.
+                                justify: le texte est aligné à gauche et à droite.
+                        + Coupure de mots (A UTILISER AVEC JUSTIFY):
+                        hyphens:
+                                none:  aucun trait d'union, dépassement si nécessaire 
+                                manual: un trait d'union uniquement si nécessaire
+                                auto: un trait d'union où l'algorithme l'estime nécessaire
+                        + Hauteur de ligne
+                        <line-height></line-height>
+                                cf Word
+                        + Espacement entre les lettres et les mots
+                        <letter-spacing></letter-spacing>
+                                chiffre + px
+                        <word-spacing></word-spacing>
+                                chiffre + px
+
+                        ++styles de mise en page du texte
+
+                        <text-indenT></text-indenT> : indique le nombre d'espaces à ménager horizontalement avant le début de la première ligne de texte du contenu.
+                        <text-overfloW></text-overfloW> : définit la façon de signaler aux utilisateurs le contenu en débordement (et donc non affiché).
+                        <white-spacE></white-spacE> : définit comment les espaces blancs et les sauts de ligne associés dans l'élément sont gérés.
+                        <word-breaK></word-breaK> : spécifie s'il y a césure dans les mots.
+                        <direction></direction> : définit la direction du texte (cela dépend de la langue et généralement, il vaut mieux laisser HTML la gérer car elle est liée au contenu du texte.)
+                        <line-break></line-break> : détend ou renforce la rupture de ligne pour les langues asiatiques.
+                        <text-align-last></text-align-last> : définit comment la dernière ligne d'un bloc ou d'une ligne, juste avant un saut de ligne forcé, est alignée.
+                        text-orientation : définit l'orientation du texte dans une ligne.
+                        word-wrap : indique si le navigateur peut replier une ligne en conservant l'ordre des mots pour empêcher un débordement.
+                        writing-mode : définit si les lignes de texte sont disposées horizontalement ou verticalement et la direction des lignes suivantes.
+                    </code>
+				</p>
+			</article>
+
+			<article>
+				<h3>Article 3</h3>
+				<p>This article focuses on another unique perspective or topic.</p>
+			</article>
+
+			<article>
+				<h3>Article 4</h3>
+				<p>This is an additional article with valuable content and insights.</p>
+			</article>
+
+			<article>
+				<h3>Article 5</h3>
+				<p>This article discusses an important subject in depth.</p>
+			</article>
+
+			<article>
+				<h3>Format HTML</h3>
+				<article>
+					<pre>Quoiqu'il a    rrive   ce texte conser    vera son format tel qui'l est dans le fichier HTmL. <br> mais la police sera, en principe par  dé fault, du Courrier. les espace et les saut de lignes seront
+                         con 
+                            servées.</pre>
+					<!-- <pre>  Defines pre-formatted text -->
+					<pre> <!-- https://www.messletters.com/fr/ -->
+                                     ∧,,,∧      ~  ┏━━━━━━━━━━━━━━━━━┓
+                                   ( ̳• · ̳• )    ~  ♡♡  I’m purrfect ♡♡
+                                                     𝕬𝖓𝖉 𝕴'𝖒 𝖋𝖆𝖇𝖚𝖑𝖔𝖚𝖘
+                                      / づ       ~  ┗━━━━━━━━━━━━━━━━━┛
+                    </pre>
+				</article>
+			</article>
+		</section>
+
+		<!-- Table Section -->
+		<section>
+			<h2>Table of Information</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+						<th>Column 3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Data 1</td>
+						<td>Data 2</td>
+						<td>Data 3</td>
+					</tr>
+					<tr>
+						<td>Data 4</td>
+						<td>Data 5</td>
+						<td>Data 6</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- inserer un tableau de 5 sur 3 -->
+			<table
+				style="width: 700px; height: 100px; margin-left: auto; margin-right: auto; border: 2px solid #0505ff; border-collapse: collapse;">
+				<tbody>
+					<tr style="border-bottom: 3px solid  background-color: rgb(136, 220, 235);">
+						<td>Lorem, lorem.</td>
+						<td>Lorem, lorem..</td>
+						<td style="width: 300px">Lorem ipsum dolor sit amet.</td>
+						<td>Lorem, lorem...</td>
+						<td>Lorem, lorem....</td>
+					</tr>
+					<tr>
+						<td
+							style="border-top: 3px solid #0505ff; border-bottom: 3px solid green; border-left: 3px solid red; border-right: 3px solid red; padding: 3px; height: 50px;">
+							Lorem ipsum dolor sit amet consectetur.</td>
+						<td style="border-top: 3px solid #0505ff;border-bottom: 3px

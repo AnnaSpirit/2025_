@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Définit le type de document et la langue de la page -->
+
+<head>
+	<meta charset="UTF-8"> <!-- Spécifie l'encodage des caractères -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Mise en page responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilité IE -->
+	<meta name="description" content="A comprehensive HTML structure template with semantic elements">
+	<!-- Description pour SEO -->
+	<meta name="keywords" content="HTML, template, semantic structure"> <!-- Mots-clés SEO -->
+	<meta name="author" content="Your Name"> <!-- Auteur du document -->
+	<title>Base HTML Structure with Semantics</title> <!-- Titre affiché dans l'onglet du navigateur -->
+	<link rel="stylesheet" href="styles.css"> <!-- Lien vers une feuille de style externe -->
+	<link rel="icon" type="image/png" href="favicon.png"> <!-- Icône de la page -->
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header,
+		footer {
+			background-color: #f4f4f4;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav {
+			background-color: #ddd;
+			padding: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		nav ul li {
+			margin: 0 10px;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		article {
+			margin-bottom: 20px;
+			padding: 15px;
+			background-color: #f9f9f9;
+			border: 1px solid #ddd;
+		}
+
+		section {
+			margin-bottom: 20px;
+		}
+
+		aside {
+			background-color: #f0f0f0;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid #ccc;
+		}
+
+		th,
+		td {
+			padding: 10px;
+			text-align: left;
+		}
+
+		h4 {
+			font-size: large;
+			color: crimson;
+		}
+
+		#Custom1 {
+			list-style: none;
+		}
+
+		.custom2::before {
+			content: "\2709";
+			color: red;
+			display: inline-block;
+			width: 1em;
+			margin-left: -1.5em;
+			margin-right: 0.5em;
+			text-align: right;
+			direction: rtl;
+		}
+
+		.list1,
+		.list2 {
+			list-style: square;
+			font-weight: bold;
+		}
+
+		.list1+p {
+			color: green;
+		}
+
+		.list2+p {
+			color: orange;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<h1>Header 1</h1>
+		<h2>Welcome to the Semantic HTML Page</h2>
+	</header>
+
+	<!-- Navigation Menu -->
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<!-- Section 1 -->
+		<section>
+			<h2>Introduction</h2>
+			<div>
+				<p>This is the first paragraph of the introduction.</p>
+			</div>
+			<div>
+				<p>This is the second paragraph of the introduction, which provides more details.</p>
+			</div>
+			<div>
+				<p>This is the third paragraph of the introduction, concluding the section.</p>
+			</div>
+		</section>
+
+		<!-- Articles -->
+		<section>
+			<h2>Articles</h2>
+			<article>
+				<h3>Article 1</h3>
+				<p>This is an article about a specific topic. Articles are useful for displaying self-contained content.
+				</p>
+				<div>
+					<p>Image added from an external link:</p>
+					<img src="https://via.placeholder.com/150" alt="Image from external link">
+				</div>
+				<div>
+					<p>Image added from the same directory as the HTML file:</p>
+					<img src="local-image.jpg" alt="Image from same directory">
+				</div>
+				<div>
+					<p>Image added from a subfolder named PICT:</p>
+					<img src="PICT/subfolder-image.jpg" alt="Image from subfolder">
+				</div>
+			</article>
+
+			<article>
+				<h3>Article 2: CSS</h3>
+				<h4>Simple</h4>
+				<p>Sélection des éléments basés sur:
+				<ul id="Custom1">
+					<li class="custom2">leur <u>nom (ex: h3)</u></li>
+					<li class="custom2"><u>id</u> (introduit par un dièse <b style="color:blue">(#)</b>)</li>
+					<li class="custom2"><u>class</u> (introduit par un point <b style="color:blue">(.)</b>)</li>
+				</ul>
+				</p>
+				<h4>Combinés</h4>
+				<p>Sélection des éléments basés sur une relation spécifique entre eux, séparés par une virgule <b
+						style="color:blue">(,)</b>.</p>
+				<h4>Pseudo-class</h4>
+				<p>Sélection des éléments basés sur un état donné
+				<ul>
+					<li class="list1">hover</li>
+					<p>est utilisé pour définir le comportement d'un élément lorsqu'un curseur de souris est placé
+						dessus.</p>
+					<li class="list1">active</li>
+					<p>Cible un élément lorsqu'il est activé, généralement lorsqu'il est cliqué.</p>
+					<li class="list1">focus</li>
+					<p>Cible un élément lorsqu'il a le focus, par exemple, après avoir été sélectionné avec la
+						tabulation.</p>
+					<li class="list1">visited</li>
+					<p>Cible un lien hypertexte qui a déjà été visité par l'utilisateur.</p>
+					<li class="list1">first-child</li>
+					<p>Cible le premier enfant d'un élément parent.</p>
+					<li class="list1">last-child</li>
+					<p>Cible le dernier enfant d'un élément parent.</p>
+					<li class="list1">nth-child()</li>
+					<p>Cible un élément en fonction de sa position dans l'ordre des enfants de son parent, en utilisant
+						une formule comme "2n" pour cibler chaque deuxième enfant.</p>
+					<li class="list1">nth-of-type()</li>
+					<p>Similaire à :nth-child(), mais cible uniquement les éléments du même type.</p>
+					<li class="list1">not()</li>
+					<p>Permet de sélectionner tous les éléments qui ne correspondent pas à un sélecteur spécifié.</p>
+					<li class="list1">checked</li>
+					<p>Cible un élément de type input qui est coché (par exemple, une case à cocher).</p>
+				</ul>
+				</p>
+				<h4>Pseudo-elements</h4>
+				<p>Ciblent une certaine partie d'un élément plutôt que l'élément tout entier. Ils sont représentés par
+					des double-points <b style="color:blue">(::)</b> après le sélecteur CSS.
+				<ul>
+					<li class="list2">::before</li>
+					<p>Permet d'insérer du contenu avant le contenu réel d'un élément</p>
+					<li class="list2">::after</li>
+					<p>Permet d'insérer du contenu après le contenu réel</p>
+					<li class="list2">::first-line</li>
+					<p>Permet de cibler la première ligne de texte à l'intérieur d'un élément</p>
+					<li class="list2">::first-letter</li>
+					<p>Permet de cibler la première lettre d'un élément.</p>
+					<li class="list2">::selection</li>
+					<p>Permet de cibler le texte sélectionné par l'utilisateur.</p>
+					<li class="list2">::placeholder</li>
+					<p>Permet de cibler le texte de l'attribut placeholder d'un élément de formulaire (par exemple, un
+						champ de saisie).</p>
+					<li class="list2">::marker</li>
+					<p>Permet de cibler le marqueur d'une liste (par exemple, les puces d'une liste à puce).</p>
+				</ul>
+				</p>
+				<h4>Attribute</h4>
+				<p>(sélection sur la présence d'un attribut avec une valeur bien précise)
+					EX: a[title] { }</p>
+				<h3>Combinateur</h3>
+				<p>Universel (*)
+					EX: * { }</p>
+				<p>Combinateur Enfant (>)
+					EX: article > p { }</p>
+				<p>Combinateur parent ( )
+					EX: article p { }</p>
+				<p><b>element, element<br>
+						écrire la suite</b></p>
+				<p>Combinateur de voisin direct (FRERES) (sélectionner un élément uniquement si celui-ci « suit » un
+					élément donné et que les deux éléments sont les fils d'un même élément parent)
+					EX: premier_element + element_cible { }</p>
+				<p>Combinateur de voisin généraux (Les deux éléments sont des fils d'un même parent Element, voisins
+					immédiats ou pas)
+					EX: premier_element ~ second_element { }</p>
+			</article>
+
+			<article>

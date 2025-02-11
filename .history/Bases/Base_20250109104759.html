@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Définit le type de document et la langue de la page (affecte le SEO et l'accessibilité) -->
+
+<head>
+	<meta charset="UTF-8"> <!-- Spécifie l'encodage des caractères pour supporter tous les caractères spéciaux -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Assure une mise en page adaptée aux différents écrans, notamment mobiles -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Force le mode d'affichage le plus récent sur Internet Explorer -->
+	<meta name="description" content="A comprehensive HTML structure template">
+	<!-- Fournit une description pour les moteurs de recherche -->
+	<meta name="keywords" content="HTML, template, complete structure">
+	<!-- Liste des mots-clés pour améliorer le référencement -->
+	<meta name="author" content="Your Name"> <!-- Indique l'auteur du document -->
+	<title>Base HTML Structure</title> <!-- Définit le titre de la page qui apparaît dans l'onglet du navigateur -->
+	<link rel="stylesheet" href="styles.css"> <!-- Lien vers une feuille de style externe pour la mise en page -->
+	<link rel="icon" type="image/png" href="favicon.png"> <!-- Icône affichée dans l'onglet du navigateur -->
+	<style>
+		/* Définit le style par défaut de la page */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header,
+		footer {
+			background-color: #f4f4f4;
+			/* Couleur de fond pour l'en-tête et le pied de page */
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav {
+			background-color: #ddd;
+			/* Couleur de fond pour le menu de navigation */
+			padding: 10px;
+		}
+
+		nav ul {
+			list-style: none;
+			/* Supprime les puces de la liste */
+			padding: 0;
+			display: flex;
+			justify-content: space-around;
+			/* Aligne les éléments horizontalement */
+		}
+
+		nav ul li {
+			margin: 0 10px;
+			/* Espacement entre les éléments du menu */
+		}
+
+		main {
+			padding: 20px;
+			/* Ajoute un espace autour du contenu principal */
+		}
+
+		table {
+			width: 100%;
+			/* Table prend toute la largeur de son conteneur */
+			border-collapse: collapse;
+			/* Supprime les espaces entre les bordures */
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid #ccc;
+			/* Ajoute des bordures aux tableaux et cellules */
+		}
+
+		th,
+		td {
+			padding: 10px;
+			/* Ajoute un espacement interne dans les cellules */
+			text-align: left;
+			/* Aligne le contenu des cellules à gauche */
+		}
+	</style>
+	<script src="script.js" defer></script> <!-- Lien vers un script JavaScript externe, chargé après le rendu HTML -->
+</head>
+
+<body>
+
+	<!-- Header Section -->
+	<header>
+		<h1>Header 1</h1> <!-- Plus grand titre, affiché en haut de l'en-tête -->
+		<h2>Header 2</h2> <!-- Deuxième niveau de titre -->
+		<h3>Header 3</h3>
+		<h4>Header 4</h4>
+		<h5>Header 5</h5>
+		<h6>Header 6</h6> <!-- Plus petit titre disponible -->
+	</header>
+
+	<!-- Navigation Menu -->
+	<nav>
+		<ul>
+			<li><a href="#">Menu Item 1</a></li> <!-- Lien de navigation vers une section ou page -->
+			<li><a href="#">Menu Item 2</a></li>
+			<li><a href="#">Menu Item 3</a></li>
+		</ul>
+	</nav>
+
+	<!-- Main Content -->
+	<main>
+		<section>
+			<h2>Lists</h2> <!-- Sous-section dédiée aux listes -->
+			<h3>Ordered List</h3> <!-- Titre pour une liste ordonnée -->
+			<ol>
+				<li>First Item</li> <!-- Élément numéroté -->
+				<li>Second Item</li>
+				<li>Third Item</li>
+			</ol>
+
+			<h3>Unordered List</h3> <!-- Titre pour une liste non ordonnée -->
+			<ul>
+				<li>Bullet 1</li> <!-- Élément avec une puce -->
+				<li>Bullet 2</li>
+				<li>Bullet 3</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Table</h2> <!-- Sous-section dédiée aux tableaux -->
+			<table>
+				<thead>
+					<tr>
+						<th>Column 1</th> <!-- En-tête de colonne -->
+						<th>Column 2</th>
+						<th>Column 3</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Row 1, Cell 1</td> <!-- Première ligne du tableau -->
+						<td>Row 1, Cell 2</td>
+						<td>Row 1, Cell 3</td>
+					</tr>
+					<tr>
+						<td>Row 2, Cell 1</td> <!-- Deuxième ligne du tableau -->
+						<td>Row 2, Cell 2</td>
+						<td>Row 2, Cell 3</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+
+	<!-- Footer Section -->
+	<footer>
+		<p>Footer Content</p> <!-- Texte affiché en bas de la page -->
+	</footer>
+
+</body>
+
+</html>

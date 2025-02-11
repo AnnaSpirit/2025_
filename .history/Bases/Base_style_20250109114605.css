@@ -1,0 +1,100 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header,
+footer {
+	background-color: #f4f4f4;
+	padding: 10px;
+	text-align: center;
+}
+
+nav {
+	background-color: #ddd;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+main {
+	padding: 20px;
+}
+
+article {
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+aside {
+	background-color: #f0f0f0;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table,
+th,
+td {
+	border: 1px solid #ccc;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: left;
+}
+
+h4 {
+	font-size: large;
+	color: crimson;
+}
+
+#Custom1 {
+	list-style: none;
+}
+
+.custom2::before {
+	content: "\2709";
+	color: red;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1.5em;
+	margin-right: 0.5em;
+	text-align: right;
+	direction: rtl;
+}
+
+.list1,
+.list2 {
+	list-style: square;
+	font-weight: bold;
+}
+
+.list1+p {
+	color: green;
+}
+
+.list2+p {
+	color: orange;
+}
