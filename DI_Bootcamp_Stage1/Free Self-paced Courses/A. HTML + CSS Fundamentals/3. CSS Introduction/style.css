@@ -1,0 +1,26 @@
+#container {
+	font-size: 18px;
+	padding-right: 12%;
+	border-left: 10px red solid;
+}
+
+.main_heading {
+	background-color: antiquewhite;
+}
+
+.main {
+	background-color: aliceblue);
+}
+
+.main_header, .main_footer {
+	color: violet);
+}
+footer p /* Descendant Selector */ {
+	background: salmon}
+h1+h4 /* Adjacent Selector */{
+	background: purple;
+}
+
+ul>li /* Direct child selector */{
+	background: yellow;
+}
