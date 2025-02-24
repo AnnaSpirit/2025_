@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #container {
 	font-size: 18px;
 	padding-right: 12%;
@@ -46,4 +47,31 @@ ul>li /* Direct child selector */{
 	height: 350px;
 	width: 350px
 	border: 2px solid green
+=======
+#container {
+	font-size: 18px;
+	padding-right: 12%;
+	border-left: 10px red solid;
+}
+
+.main_heading {
+	background-color: antiquewhite;
+}
+
+.main {
+	background-color: aliceblue);
+}
+
+.main_header, .main_footer {
+	color: violet);
+}
+footer p /* Descendant Selector */ {
+	background: salmon}
+h1+h4 /* Adjacent Selector */{
+	background: purple;
+}
+
+ul>li /* Direct child selector */{
+	background: yellow;
+>>>>>>> 67b179fdf2b4391c2cc9a5e677f56a307da8bda8
 }
