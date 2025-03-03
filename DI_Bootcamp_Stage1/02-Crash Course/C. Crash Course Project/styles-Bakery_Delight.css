@@ -1,0 +1,168 @@
+
+/*NOTE: Réinitialisation de base */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+}
+.wrapper {
+/* c’est là qu’on met la sidebar + le contenu */	
+	display: flex;
+/* pour “pousser” le footer vers le bas */	
+	flex: 1;
+}
+main{
+/* Le contenu occupe l'espace disponible */	
+	flex: 1;
+	padding: 1rem;
+	}
+
+/*NOTE: Styles pour la barre de navigation latérale*/
+.sidebar {
+	width: 200px;
+/*Largeur fixe de la barre */
+	height: 100vh;
+/*Prend toute la hauteur de l'écran */
+	background-color: #ffb84d;
+	background-attachment: fixed;
+/*Couleur de fond*/
+	color: black;
+/*Texte */
+	padding-top: 30px;
+/*Espacement en haut */
+	position: fixed;
+/*Fixe la barre sur le côté gauche */
+	left: 0;
+	top: 0;
+	text-align: center;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+/*INFO: liens du menu */
+.sidebar ul {
+/*Supprime les puces de la liste */
+	list-style: none;
+	padding: 0;
+}
+
+/*INFO: Style des éléments de la liste */
+.sidebar ul li {
+	padding: 15px;
+/*Centre le texte */
+	text-align: center;
+}
+/*INFO:Style des liens */
+.sidebar ul li a {
+/*Supprime le soulignement */
+	text-decoration: none;
+/*Texte*/	
+	color: #221A83;
+/*Prend toute la largeur */	
+	display: block;
+	cursor: pointer;
+}
+
+/*INFO: Effet au survol*/
+.sidebar ul li a:hover {
+/*Change la couleur de fond */
+	background-color: #f47321;
+}
+
+/*NOTE: Styles pour le contenu */
+.content {
+/*Décale le contenu*/
+	margin-left: 250px;
+/*adapter automatiquement le contenu*/
+	padding: 20px;
+	flex-grow: 1;
+}
+/* NOTE:Page Home */
+
+#container{
+	justify-content: center;
+	text-align: justify;
+	margin-right: 50px;
+}
+p{
+	font-size: 20px;
+	margin: 10px 130px 10px 130px;
+}
+.IC{
+	font-size: 25px;
+	color: #33AA83;
+	margin-right: 22px;
+}
+.li_H3{
+	list-style: none;
+	font-size: 35px;
+	text-decoration-color: #352CA6;
+	text-decoration-line: underline;
+	text-decoration-thickness: 4px;
+	padding-top: 15px;
+	padding-bottom: 10PX;
+}
+.combo-regular {
+	font-family: "Combo", serif;
+	font-weight: 600;
+	font-style: normal;
+}
+.black-ops-one-regular {
+	font-family: "Black Ops One", serif;
+	font-weight: 800;
+	font-style: normal;
+	text-align: center;
+	font-size: 80px;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #ffb84d
+}
+/* NOTE:Page Products */
+
+/* NOTE:Page Contact */
+#Contact-title{
+	text-align: center;
+	font-size: 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #ffb84d
+}
+form, option, .btn{
+	font-size: 20px;
+}
+label {
+	display: flex;
+	letter-spacing: 2px;
+	font-weight: bold;
+	color: #221A83;
+}
+.input-field {
+	width: 100%;
+	padding: 10px;
+
+}
+.textarea, .put-box, .select{
+	width: 80%;
+	padding: 10px;
+		font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#Producs, #parts{
+	font-size: 20px;
+}
+# drop{
+	font-size: 30px;
+}
+/*NOTE: Pied de page */
+footer {
+	background-color: black;
+	text-align: center;
+	padding: 1rem;
+	color: yellow;
+	margin-left: 200px;
+}

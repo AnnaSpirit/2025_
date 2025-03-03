@@ -1,0 +1,26 @@
+
+table {
+	table-layout: auto;
+	max-width: 40%;
+	margin-left: 200px;
+	padding: 10px;
+}
+
+th,
+td {
+	border: 1px solid black;
+	padding: 4px;
+	width: 50%;
+}
+
+/* .balise .echap{
+	padding: 2px 4px;
+	border-radius: 3px;
+} */
+.echap {
+	background-color: #eadddd;
+
+h5 {
+	color: brown;
+	
+}

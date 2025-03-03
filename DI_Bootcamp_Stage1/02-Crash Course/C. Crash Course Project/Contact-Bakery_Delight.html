@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--INFO: On relie la police et icône Google -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Combo&display=swap" rel="stylesheet">
+	<!--INFO: Titre qui se voit dans l'onglet -->
+	<title>Contact-Bakery_Delight</title>
+	<!--INFO: On relie le fichier CSS -->
+	<link rel="stylesheet" href="styles-Bakery_Delight.css">
+	<!--INFO: On relie le fichier CSS -->
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<!--INFO: Navigation latérale -->
+		<div class="sidebar">
+			<a href="Home-Bakery_Delight.html" title="Home page"><img src="Images/Bakery-Delight_logo.png"
+					title="Home page" alt="Logo" style="width: 131px; height: 116px;"></a>
+			<ul>
+				<li><a href="Home-Bakery_Delight.html" class="Logo"></a></li>
+				<li><a href="Products-Bakery_Delight.html" target="_blank">Our Products</a></li>
+				<li><a href="Contact-Bakery_Delight.html">Contact</a></li>
+			</ul>
+		</div>
+		<main>
+			<!--INFO: Contenu principal-->
+			<div class="content">
+				<div id="contact" class="container">
+					<h2 id="Contact-title">Contact Us</h2>
+					<form>
+						<div class="input-field">
+							<label for="name">Name</label>
+							<input class="put-box" type="text" id="name" name="name" required>
+
+						</div>
+						<div class="input-field">
+							<label for="email">Email</label>
+							<input class="put-box" type="email" id="email" name="email" required>
+						</div>
+						<div class="input-field">
+							<label for="city">City</label>
+							<input class="put-box" type="text" id="city" name="city">
+						</div>
+						<div class="input-field">
+							<label for="Products">Choose a Products:</label>
+							<select class="put-box" id="Producs, drop" name="Products">
+								<option value="Product-dis" selected disabled>Product</option>
+								<option value="breads">Breads</option>
+								<option value="pastries">Pastries</option>
+								<option value="cakes">Cakes</option>
+								<option value="wedding_cakes">Wedding cakes</option>
+							</select>
+							<label for="parts">How many parts do you need (max 20)</label>
+							<input class="put-box" type="number" id="parts" name="Parts" min="6" max="20" step="2">
+						</div>
+						<div class="input-field">
+							<label for="message">Message</label>
+							<textarea class="put-box" id="message" name="message" required></textarea>
+
+						</div>
+						<button class="btn" type="submit">Send</button>
+						<input class="btn" type="reset" value="Clear">
+					</form>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<footer>Source Code of Inspiration: Sweet Tooth, ChatGPT (aka Noam, my AI sidekick 🧠⚙️), and my overclocked brain:
+		AnnaSpirit.
+		🚨 Warning: This code, these ideas, and this sheer brilliance are under intergalactic protection. Any attempt at
+		plagiarism will result in an instant H5G9 infection (yep, Sweet Tooth’s virus 😈). Good luck finding a cure...
+		💾 Powered by: Coffee, insomnia, and unconditional love for steampunk.
+	</footer>
+</body>
+
+</html>

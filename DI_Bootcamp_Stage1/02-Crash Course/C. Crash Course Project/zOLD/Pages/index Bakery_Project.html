@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- STYLES CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=more_vert" />
+		<link rel="stylesheet" href="../CSS/Style.Bakery_Project.css">
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Cabin+Sketch:wght@400;700&display=swap"
+		rel="stylesheet">
+	<!-- TITLE -->
+	<title>Bakery Delight - Home</title>
+</head>
+
+<body>
+
+	<!-- Navigation Menu -->
+	<nav>
+		<!-- Insertion de la structure Dropdown de Materialize -->
+		<ul id="dropdown1" class="dropdown-content">
+			<!-- Elements du menu -->
+			<li><a href="../Products/Products_Bakery.html">Bread</a></li> <!-- "Pains" -->
+			<li><a href="../Products/Products_Bakery.html">Bakery</a></li> <!-- Viennoiseries -->
+			<li><a href="../Products/Products_Cakes.html">Cakes</a></li> <!-- Gateaux -->
+			<li><a href="../Products/Products_Wedding Cakes.html">Wedding cakes</a></li> <!-- Gateaux de mariage -->
+		</ul>
+
+		<!-- Navbar avec la structure Materialize -->
+		<nav>
+			<div class="nav-wrapper">
+				<!-- Logo ou titre de la navbar -->
+				<a href="index Bakery_Project.html" class="brand-logo yellow-text lighten-2 arizonia-regular">Bakery
+					Delight</a>
+				<ul class="right hide-on-med-and-down">
+					<!-- Lien About Us -->
+					<li><a href="About Bakery_Project.html">About Us</a></li>
+					<!-- Déclencheur du Dropdown Materialize -->
+					<li>
+						<a class="dropdown-trigger" href="#!" data-target="dropdown1">
+							Products
+							<i class="material-symbols-outlined">more_vert</i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+		<!-- Inclusion du JS de Materialize -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+		<!-- Initialisation du Dropdown Materialize -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function () {
+				var elems = document.querySelectorAll('.dropdown-trigger');
+				M.Dropdown.init(elems, {
+					coverTrigger: false  // Positionne le dropdown sous le déclencheur
+				});
+			});
+		</script>
+</body>
+
+</html>
