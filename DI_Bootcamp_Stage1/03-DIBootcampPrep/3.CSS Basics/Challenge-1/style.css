@@ -1,0 +1,15 @@
+div{
+	background-color: #55ccff;
+}
+p{
+	font-family: Verdana, DejaVu Sans, sans-serif;
+}
+li{
+	font-size: 1.5em;
+	text-align: center;
+	text-transform: capitalize;
+	list-style: none;
+}
+strong{
+	font-size: 2em;
+}

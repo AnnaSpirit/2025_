@@ -88,7 +88,7 @@ main{
 	text-align: justify;
 	margin-right: 50px;
 }
-p{
+li>p{
 	font-size: 20px;
 	margin: 10px 130px 10px 130px;
 }
@@ -122,6 +122,61 @@ p{
 	background-color: #ffb84d
 }
 /* NOTE:Page Products */
+#ProductS-title{
+	text-align: center;
+	font-size: 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: #ffb84d
+}
+/* class="categories"{
+
+} */
+.fredericka-the-great-regular {
+	font-family: "Fredericka the Great", serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 60px;
+	padding-left: 120px;
+}
+mark{
+	background-color: #85DABE;
+}
+
+table{
+	border-collapse: collapse;
+	width: 100%;
+	border-color: blue;
+	border: solid;
+}
+th>img{
+	width: 200px;
+	height: 200px;
+	text-align: center;
+}
+.name{
+	color: #801515;
+	font-size: 20px;
+	text-align: center;
+	
+}
+.depiction{
+	text-align: justify;
+	padding: 10px;
+}
+.ingred{
+	text-align: justify;
+	padding: 10px;
+	font-style: italic;
+	font-weight: normal;
+}
+.Size{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+	height: 70px;
+}
 
 /* NOTE:Page Contact */
 #Contact-title{

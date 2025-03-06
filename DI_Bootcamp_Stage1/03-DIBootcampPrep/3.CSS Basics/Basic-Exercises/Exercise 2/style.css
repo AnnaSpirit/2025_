@@ -1,0 +1,20 @@
+/* INFO: 
+odd = impair
+even = pair*/
+
+.odd {
+	background-color: salmon;
+	font-family: Verdana, DejaVu Sans, sans-serif;
+}
+#two {
+	color: rgb(44, 105, 153);
+	font-size: 36px;
+}
+.cooler {
+	font-size: 28px;
+}
+#four {
+	background-color:#80ff80;
+	font-size: 24px;
+	font-weight: bold;
+}
