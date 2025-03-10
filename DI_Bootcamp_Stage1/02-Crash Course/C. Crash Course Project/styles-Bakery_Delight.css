@@ -130,9 +130,27 @@ li>p{
 	padding: 20px;
 	background-color: #ffb84d
 }
-/* class="categories"{
+span{
+	display: flex;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	background-color: #D3F9BD;
+}
 
-} */
+.item {
+	width: 10em;
+}
+.JumpLink{
+	text-align: center;
+	text-decoration: none;
+	font-weight: 900;
+	color: #525D4C;
+	margin: 20px;
+	padding:10px;
+}
 .fredericka-the-great-regular {
 	font-family: "Fredericka the Great", serif;
 	font-weight: 200;
