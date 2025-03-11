@@ -17,6 +17,16 @@ else:
 	print("perfect string")
 
 #INFO: How reload the user_input if it's not 10 characters long?
+user_input = ""
+while len(user_input) != 10:
+	user_input = input("Please enter a string: ")
+	if len(user_input) < 10:
+	#HACK: len() - longueur de la chaine de caractere
+		print("string not long enough")
+	elif len(user_input) > 10:
+		print("string too long")
+	else:
+		print("perfect string")
 
     # 2. Then, print the first and last characters of the given text. (The user enters "HelloWorld" Then you have to print: H, d)
 
@@ -40,3 +50,8 @@ print(''.join(user_input))
 #HACK: random.shuffle() - pour melanger les elements de la liste aleatoirement
 #HACK: ''.join() - pour transformer la liste en chaine de caractere
 
+#INFO: How to redo the shuffle 10 time for example?
+for i in range(10):
+	user_input = list(user_input)
+	random.shuffle(user_input)
+	print(''.join(user_input))
